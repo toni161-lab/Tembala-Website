@@ -1,39 +1,38 @@
 <!DOCTYPE html>
 <html lang="de">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Tembala</title>
 
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Halimum&family=Montserrat:wght@400;500;700&display=swap" rel="stylesheet">
+
   <style>
-    * {
-      margin: 0;
-      padding: 0;
-      box-sizing: border-box;
-    }
+    * { margin:0; padding:0; box-sizing:border-box; }
 
     body {
       font-family: 'Montserrat', sans-serif;
-      background-color: #ffe4e1; /* Rosa */
-      color: #004d40; /* Mintgrün */
+      background-color: #ffe4e1; /* Rosa Hintergrund */
+      color: #004d40; /* Mintgrün Text */
       line-height: 1.6;
     }
 
-    /* HEADER */
     header {
       display: flex;
       align-items: center;
       justify-content: space-between;
       padding: 1rem 2rem;
-      background-color: #ffe4e1;
       position: sticky;
       top: 0;
+      background-color: #ffe4e1;
+      border-bottom: 2px solid #76c7c0;
       z-index: 100;
-      border-bottom: 1px solid #76c7c0;
     }
 
+    /* Logo links */
     header img {
-      height: 70px;
+      height: 80px;
       cursor: pointer;
     }
 
@@ -46,13 +45,10 @@
       text-decoration: none;
       color: #004d40;
       font-weight: 600;
-      font-size: 1rem;
       transition: opacity 0.3s;
     }
 
-    nav a:hover {
-      opacity: 0.7;
-    }
+    nav a:hover { opacity: 0.7; }
 
     main {
       padding: 3rem 2rem;
@@ -63,25 +59,8 @@
       margin-bottom: 4rem;
     }
 
-    h2 {
+    h1,h2 {
       font-family: 'Halimum', cursive;
       font-size: 2rem;
       margin-bottom: 1rem;
-    }
-
-    p {
-      font-size: 1.1rem;
-      margin-bottom: 1rem;
-    }
-
-    footer {
-      background-color: #ffe4e1;
       color: #004d40;
-      padding: 2rem 1rem;
-      font-size: 0.9rem;
-      border-top: 1px solid #004d40;
-      text-align: center;
-    }
-
-    /* Responsive für mobile */
-    @media(max-width:768px){
