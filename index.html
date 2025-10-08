@@ -3,10 +3,9 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Tembala – feel the balance</title>
+  <title>Tembala</title>
 
   <style>
-    /* GRUNDSTIL */
     * {
       margin: 0;
       padding: 0;
@@ -14,30 +13,128 @@
     }
 
     body {
+      background-color: #ffe4e1; /* sanfter Rosaton */
+      color: #004d40; /* kräftiges Mint-Grün für Text */
       font-family: 'Montserrat', sans-serif;
-      background-color: #ffe4e1; /* Zartrosa überall */
-      color: #76c7c0; /* Mintgrün */
-      text-align: center;
       line-height: 1.6;
+      text-align: center;
     }
 
-    a {
-      color: #76c7c0;
-      text-decoration: none;
-    }
-
-    a:hover {
-      text-decoration: underline;
-    }
-
-    /* HEADER */
     header {
-      padding: 2.5rem 1rem 3rem;
+      padding: 2rem 1rem;
       text-align: center;
     }
 
     header img {
-      width: 200px;
+      width: 180px;
       height: auto;
       display: block;
-      margin: 0 auto 0.5rem auto;
+      margin: 0 auto 1rem auto;
+    }
+
+    header p {
+      color: #004d40;
+      font-size: 1.2rem;
+      margin-top: 0.5rem;
+    }
+
+    nav {
+      margin: 1rem 0;
+    }
+
+    nav a {
+      margin: 0 1rem;
+      color: #004d40;
+      text-decoration: none;
+      font-weight: 500;
+      transition: opacity 0.3s;
+    }
+
+    nav a:hover {
+      opacity: 0.7;
+    }
+
+    .cta-btn {
+      display: inline-block;
+      margin-top: 1.5rem;
+      padding: 0.75rem 1.5rem;
+      background-color: #004d40;
+      color: #fff;
+      font-weight: bold;
+      border-radius: 10px;
+      transition: background-color 0.3s;
+    }
+
+    .cta-btn:hover {
+      background-color: #00332a;
+    }
+
+    section {
+      padding: 3rem 1rem;
+    }
+
+    section h2 {
+      color: #004d40;
+      font-size: 2rem;
+      margin-bottom: 0.75rem;
+    }
+
+    section p {
+      color: #004d40;
+      margin-bottom: 1rem;
+    }
+
+    section img {
+      max-width: 90%;
+      height: auto;
+      margin: 1rem;
+      border-radius: 12px;
+    }
+
+    footer {
+      background-color: #ffe4e1;
+      color: #004d40;
+      padding: 2rem 1rem;
+      font-size: 0.9rem;
+      border-top: 1px solid #004d40;
+    }
+  </style>
+</head>
+
+<body>
+
+  <header>
+    <img src="logo.png" alt="Tembala Logo">
+    <p>feel the balance of warm & cool</p>
+    <nav>
+      <a href="#shop">Shop</a>
+      <a href="#about">Über uns</a>
+      <a href="#contact">Kontakt</a>
+    </nav>
+    <a href="#shop" class="cta-btn">Zum Shop</a>
+  </header>
+
+  <section id="shop">
+    <h2>Unsere Produkte</h2>
+    <p>Hier findest du unsere aktuellen Highlights:</p>
+    <img src="fabric-mint-2.png" alt="Mint Fabric">
+    <img src="fabric-pink.png" alt="Pink Fabric">
+  </section>
+
+  <section id="about">
+    <h2>Über uns</h2>
+    <p>Wir glauben an Balance und gute Vibes.</p>
+    <img src="team.png" alt="Unser Team">
+  </section>
+
+  <section id="contact">
+    <h2>Kontakt</h2>
+    <p>Schreib uns gerne!</p>
+  </section>
+
+  <footer>
+    &copy; 2025 Tembala — Alle Rechte vorbehalten.
+  </footer>
+
+</body>
+</html>
