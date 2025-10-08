@@ -1,79 +1,103 @@
 <!DOCTYPE html>
 <html lang="de">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Tembala</title>
 
-  <!-- Google Fonts für Ersatz, falls Halimum nicht geladen wird -->
-  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700&family=Pacifico&display=swap" rel="stylesheet">
-  <!-- Pacifico als schöne Ersatzschrift, ähnlich verspielt wie Halimum -->
-
   <style>
-    * { margin:0; padding:0; box-sizing:border-box; }
-    body { font-family: 'Montserrat', sans-serif; line-height:1.6; background:#fefefe; color:#333; }
+    /* Grundlayout */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
 
-    /* Überschriften */
-    h1,h2,h3 { font-family: 'Pacifico', cursive; color:#76c7c0; margin-bottom:1rem; }
-
-    a { text-decoration:none; color:inherit; }
+    body {
+      font-family: 'Montserrat', sans-serif;
+      background-color: #fff;
+      color: #333;
+      line-height: 1.6;
+      text-align: center;
+    }
 
     /* HEADER */
-    header { background:#ffe4e1; padding:2rem 1rem; text-align:center; }
-    header img { max-width:150px; margin-bottom:1rem; display:block; margin-left:auto; margin-right:auto; }
+    header {
+      background-color: #ffe4e1; /* zartes Rosa */
+      padding: 2rem 1rem 3rem;
+      text-align: center;
+    }
 
-    nav { margin-top:1rem; }
-    nav a { margin:0 1rem; font-weight:500; }
+    header img {
+      width: 220px;
+      height: auto;
+    }
 
-    .cta-btn { display:inline-block; padding:0.75rem 1.5rem; margin-top:1rem; background:#76c7c0; color:white; font-weight:bold; border-radius:12px; transition:0.3s; }
-    .cta-btn:hover { background:#5da9a4; }
+    header p {
+      color: #76c7c0; /* Mintgrün */
+      font-size: 1.1rem;
+      margin-top: 0.75rem;
+      letter-spacing: 1px;
+      font-weight: 500;
+    }
 
-    section { padding:4rem 1rem; text-align:center; }
-    section img { max-width:100%; height:auto; margin-top:1rem; border-radius:12px; }
+    nav {
+      margin-top: 1.5rem;
+    }
 
-    footer { background:#2c3e50; color:white; padding:2rem 1rem; text-align:center; }
-  </style>
-</head>
-<body>
+    nav a {
+      margin: 0 1rem;
+      font-weight: 500;
+      color: #2c3e50;
+      transition: color 0.3s;
+    }
 
-  <!-- HEADER -->
-  <header>
-    <img src="logo.png" alt="Tembala Logo">
-    <h1>Tembala</h1>
-    <p style="color:#76c7c0; font-weight:500; margin-top:0.5rem;">feel the balance of warm & cool</p>
-    <nav>
-      <a href="#shop">Shop</a>
-      <a href="#about">Über uns</a>
-      <a href="#contact">Kontakt</a>
-    </nav>
-    <a href="#shop" class="cta-btn">Zum Shop</a>
-  </header>
+    nav a:hover {
+      color: #76c7c0;
+    }
 
-  <!-- SHOP -->
-  <section id="shop">
-    <h2>Unsere Produkte</h2>
-    <p>Hier findest du unsere aktuellen Highlights:</p>
-    <img src="fabric-mint-2.png" alt="Mint Fabric">
-    <img src="fabric-pink.png" alt="Pink Fabric">
-  </section>
+    .cta-btn {
+      display: inline-block;
+      margin-top: 1.5rem;
+      padding: 0.8rem 1.8rem;
+      background-color: #76c7c0;
+      color: #fff;
+      font-weight: bold;
+      border-radius: 12px;
+      transition: background-color 0.3s;
+    }
 
-  <!-- ABOUT -->
-  <section id="about">
-    <h2>Über uns</h2>
-    <p>Wir glauben an Balance und gute Vibes.</p>
-    <img src="team.png" alt="Unser Team">
-  </section>
+    .cta-btn:hover {
+      background-color: #5da9a4;
+    }
 
-  <!-- CONTACT -->
-  <section id="contact">
-    <h2>Kontakt</h2>
-    <p>Schreibe uns eine Nachricht!</p>
-  </section>
+    /* SECTIONS */
+    section {
+      padding: 4rem 1rem;
+    }
 
-  <!-- FOOTER -->
-  <footer>
-    &copy; 2025 Tembala. Alle Rechte vorbehalten.
-  </footer>
+    section h2 {
+      font-size: 2rem;
+      color: #2c3e50;
+      margin-bottom: 1rem;
+      font-family: 'Halimum', cursive;
+      letter-spacing: 1px;
+    }
 
-</body>
-</htm
+    section p {
+      font-size: 1rem;
+      margin-bottom: 1rem;
+      color: #555;
+    }
+
+    section img {
+      max-width: 90%;
+      height: auto;
+      border-radius: 14px;
+      margin: 1rem;
+    }
+
+    /* FOOTER */
+    footer {
+      background-color: #2c3e50;
+      colo
