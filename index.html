@@ -13,40 +13,40 @@
     }
 
     body {
-      background-color: #ffe4e1; /* sanfter Rosaton */
-      color: #004d40; /* kräftiges Mint-Grün für Text */
       font-family: 'Montserrat', sans-serif;
+      background-color: #ffe4e1; /* Rosa */
+      color: #004d40; /* Mintgrün */
       line-height: 1.6;
-      text-align: center;
     }
 
+    /* HEADER */
     header {
-      padding: 2rem 1rem;
-      text-align: center;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 1rem 2rem;
+      background-color: #ffe4e1;
+      position: sticky;
+      top: 0;
+      z-index: 100;
+      border-bottom: 1px solid #76c7c0;
     }
 
     header img {
-      width: 180px;
-      height: auto;
-      display: block;
-      margin: 0 auto 1rem auto;
-    }
-
-    header p {
-      color: #004d40;
-      font-size: 1.2rem;
-      margin-top: 0.5rem;
+      height: 70px;
+      cursor: pointer;
     }
 
     nav {
-      margin: 1rem 0;
+      display: flex;
+      gap: 2rem;
     }
 
     nav a {
-      margin: 0 1rem;
-      color: #004d40;
       text-decoration: none;
-      font-weight: 500;
+      color: #004d40;
+      font-weight: 600;
+      font-size: 1rem;
       transition: opacity 0.3s;
     }
 
@@ -54,41 +54,24 @@
       opacity: 0.7;
     }
 
-    .cta-btn {
-      display: inline-block;
-      margin-top: 1.5rem;
-      padding: 0.75rem 1.5rem;
-      background-color: #004d40;
-      color: #fff;
-      font-weight: bold;
-      border-radius: 10px;
-      transition: background-color 0.3s;
-    }
-
-    .cta-btn:hover {
-      background-color: #00332a;
+    main {
+      padding: 3rem 2rem;
+      text-align: center;
     }
 
     section {
-      padding: 3rem 1rem;
+      margin-bottom: 4rem;
     }
 
-    section h2 {
-      color: #004d40;
+    h2 {
+      font-family: 'Halimum', cursive;
       font-size: 2rem;
-      margin-bottom: 0.75rem;
-    }
-
-    section p {
-      color: #004d40;
       margin-bottom: 1rem;
     }
 
-    section img {
-      max-width: 90%;
-      height: auto;
-      margin: 1rem;
-      border-radius: 12px;
+    p {
+      font-size: 1.1rem;
+      margin-bottom: 1rem;
     }
 
     footer {
@@ -97,44 +80,8 @@
       padding: 2rem 1rem;
       font-size: 0.9rem;
       border-top: 1px solid #004d40;
+      text-align: center;
     }
-  </style>
-</head>
 
-<body>
-
-  <header>
-    <img src="logo.png" alt="Tembala Logo">
-    <p>feel the balance of warm & cool</p>
-    <nav>
-      <a href="#shop">Shop</a>
-      <a href="#about">Über uns</a>
-      <a href="#contact">Kontakt</a>
-    </nav>
-    <a href="#shop" class="cta-btn">Zum Shop</a>
-  </header>
-
-  <section id="shop">
-    <h2>Unsere Produkte</h2>
-    <p>Hier findest du unsere aktuellen Highlights:</p>
-    <img src="fabric-mint-2.png" alt="Mint Fabric">
-    <img src="fabric-pink.png" alt="Pink Fabric">
-  </section>
-
-  <section id="about">
-    <h2>Über uns</h2>
-    <p>Wir glauben an Balance und gute Vibes.</p>
-    <img src="team.png" alt="Unser Team">
-  </section>
-
-  <section id="contact">
-    <h2>Kontakt</h2>
-    <p>Schreib uns gerne!</p>
-  </section>
-
-  <footer>
-    &copy; 2025 Tembala — Alle Rechte vorbehalten.
-  </footer>
-
-</body>
-</html>
+    /* Responsive für mobile */
+    @media(max-width:768px){
