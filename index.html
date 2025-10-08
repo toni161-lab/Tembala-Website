@@ -5,26 +5,22 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Tembala</title>
 
-  <!-- Google Fonts für Montserrat -->
-  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700&display=swap" rel="stylesheet">
+  <!-- Google Fonts für Ersatz, falls Halimum nicht geladen wird -->
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700&family=Pacifico&display=swap" rel="stylesheet">
+  <!-- Pacifico als schöne Ersatzschrift, ähnlich verspielt wie Halimum -->
 
   <style>
     * { margin:0; padding:0; box-sizing:border-box; }
     body { font-family: 'Montserrat', sans-serif; line-height:1.6; background:#fefefe; color:#333; }
 
-    /* Überschriften Halimum */
-    @font-face {
-      font-family: 'Halimum';
-      src: url('Halimum-Regular.ttf') format('truetype'); /* Stelle sicher, dass die Halimum-Datei im Hauptordner liegt */
-    }
-
-    h1,h2,h3 { font-family: 'Halimum', cursive; color:#76c7c0; margin-bottom:1rem; } /* Mint-Grün */
+    /* Überschriften */
+    h1,h2,h3 { font-family: 'Pacifico', cursive; color:#76c7c0; margin-bottom:1rem; }
 
     a { text-decoration:none; color:inherit; }
 
     /* HEADER */
     header { background:#ffe4e1; padding:2rem 1rem; text-align:center; }
-    header img { max-width:150px; margin-bottom:1rem; }
+    header img { max-width:150px; margin-bottom:1rem; display:block; margin-left:auto; margin-right:auto; }
 
     nav { margin-top:1rem; }
     nav a { margin:0 1rem; font-weight:500; }
@@ -80,4 +76,4 @@
   </footer>
 
 </body>
-</html>
+</htm
