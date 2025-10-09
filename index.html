@@ -5,33 +5,23 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>tembala</title>
 
-<!-- Halimum Schrift einbinden -->
+<!-- Schriftarten -->
 <style>
   @font-face {
     font-family: 'Halimum';
-    src: url('halimum.woff') format('woff');
+    src: url('tembala-script.woff2') format('woff2');
     font-weight: normal;
     font-style: normal;
   }
 
-  /* Exakte Farben aus Logo */
-  :root {
-    --rosa: #ffe4e1; /* Hintergrund */
-    --mint: #39c7b3; /* Schrift / Akzente */
-  }
-
-  * { margin: 0; padding: 0; box-sizing: border-box; }
-
-  html {
-    scroll-behavior: smooth;
-  }
-
   body {
-    font-family: Arial, sans-serif;
-    background-color: var(--rosa);
-    color: var(--mint);
+    font-family: 'Montserrat', sans-serif;
+    background-color: #ffe4e1; /* Rosa aus Logo */
+    color: #39c7b3; /* Mint aus Logo */
     line-height: 1.6;
     text-align: center;
+    scroll-behavior: smooth;
+    margin: 0;
   }
 
   header {
@@ -45,7 +35,6 @@
     margin: 0 auto 1rem auto;
   }
 
-  /* Tabs oben */
   nav {
     display: flex;
     justify-content: center;
@@ -57,12 +46,12 @@
     text-decoration: none;
     font-family: 'Halimum', cursive;
     font-size: 1.2rem;
-    color: var(--mint);
+    color: #39c7b3;
     transition: 0.3s;
   }
 
   nav a:hover {
-    color: #1f8c7b; /* dunkleres Mint beim Hover */
+    color: #1f8c7b;
   }
 
   section {
@@ -84,8 +73,8 @@
   }
 
   footer {
-    background-color: var(--rosa);
-    color: var(--mint);
+    background-color: #ffe4e1;
+    color: #39c7b3;
     padding: 2rem 1rem;
     text-align: center;
   }
@@ -104,3 +93,48 @@
     <a href="#shop">Shop</a>
     <a href="#galerie">Galerie</a>
   </nav>
+</header>
+
+<!-- PRODUKT -->
+<section id="produkt">
+  <h2>Produkt</h2>
+  <p><strong>tembala – feel the balance of warm and cool</strong></p>
+  <p>
+    Das multifunktionale Gesundheitskissen, auf das wir alle gewartet haben.<br>
+    Die Füllung aus Bio-Raps eignet sich perfekt zum Erwärmen und Abkühlen.<br>
+    Durch seine innovative Form und den praktischen Verschluss kann es an fast jeder Körperzone eingesetzt werden: Nacken, Schultern, unterer Rücken, unterer Bauch.<br>
+    tembala bringt Balance in deinen Alltag – ob warme Umarmung oder Cool-down nach einem stressigen Tag.<br>
+    tembala passt sich deinen Bedürfnissen an.
+  </p>
+  <img src="produktvision.png" alt="Produktvision" class="product-image">
+</section>
+
+<!-- ÜBER UNS -->
+<section id="ueber-uns">
+  <h2>Über uns</h2>
+  <p>
+    Wir sind vier Schmerzpatient*innen, die aus einer kleinen Idee eine große Erleichterung für Menschen mit körperlichen Beschwerden schaffen wollen.<br>
+    Herkömmliche Gesundheitskissen waren oft unflexibel – aus unserer Erfahrung heraus haben wir tembala entwickelt.<br>
+    Mit Herzblut, Ideenreichtum und Tüftelei ist tembala entstanden, um Wärme, Kühlung und Halt genau dort zu bieten, wo du es brauchst.<br>
+    Unsere Vision: Menschen mit körperlichen Beschwerden mehr Wohlbefinden, Flexibilität und Balance zu schenken.
+  </p>
+</section>
+
+<!-- SHOP -->
+<section id="shop">
+  <h2>Shop</h2>
+  <p>Hier kommen bald unsere Produkte!</p>
+</section>
+
+<!-- GALERIE -->
+<section id="galerie">
+  <h2>Galerie</h2>
+  <p>Stoffbilder folgen hier.</p>
+</section>
+
+<footer>
+  <p>© 2025 tembala – feel the balance</p>
+</footer>
+
+</body>
+</html>
