@@ -13,7 +13,7 @@
     * { margin:0; padding:0; box-sizing:border-box; }
     body {
       font-family: 'Montserrat', sans-serif;
-      background: linear-gradient(to bottom, #ffe4e1, #ffffff);
+      background: linear-gradient(to bottom, #ffc0cb, #ffe4e1); /* stärkeres Rosa */
       color: #00655c; /* dunkles Mint aus Logo */
       line-height: 1.6;
     }
@@ -23,3 +23,134 @@
     /* Header / Logo */
     header {
       text-align: center;
+      padding: 2rem 1rem;
+    }
+    header img {
+      width: 250px;
+      max-width: 80%;
+      cursor: pointer;
+    }
+
+    /* Navigation Tabs */
+    nav {
+      display: flex;
+      justify-content: center;
+      margin: 2rem 0;
+      gap: 2rem;
+    }
+    nav a {
+      font-weight: 500;
+      padding: 0.5rem 1rem;
+      border-radius: 8px;
+      transition: background 0.3s;
+    }
+    nav a:hover { background: #a3ded2; }
+
+    /* Sections */
+    section {
+      padding: 3rem 1rem;
+      text-align: center;
+    }
+    .cta-btn {
+      display:inline-block;
+      padding:0.75rem 1.5rem;
+      margin-top:1rem;
+      background:#76c7c0;
+      color:white;
+      font-weight:bold;
+      border-radius:12px;
+      transition:0.3s;
+    }
+    .cta-btn:hover { background:#5da9a4; }
+
+    /* Galerie */
+    .gallery {
+      display: flex;
+      justify-content: center;
+      gap: 1rem;
+      flex-wrap: wrap;
+      margin-top: 1rem;
+    }
+    .gallery img {
+      width: 30%;
+      max-width:200px;
+      height:auto;
+      border-radius:12px;
+    }
+
+    /* Produktbild */
+    .product-image {
+      width: 80%;
+      max-width:400px;
+      height:auto;
+      border-radius:12px;
+      margin-top:1rem;
+    }
+
+    footer {
+      background:#00655c;
+      color:white;
+      padding:2rem 1rem;
+      text-align:center;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- HEADER / LOGO -->
+  <header>
+    <a href="#home"><img src="logo.png" alt="tembala Logo"></a>
+    <h1>tembala</h1>
+    <p>feel the balance of warm & cool</p>
+  </header>
+
+  <!-- NAVIGATION -->
+  <nav>
+    <a href="#produkt">Produkt</a>
+    <a href="#ueberuns">Über uns</a>
+    <a href="#shop">Shop</a>
+    <a href="#galerie">Galerie</a>
+  </nav>
+
+  <!-- PRODUKT SECTION -->
+  <section id="produkt">
+    <h2>Produkt</h2>
+    <p>
+      tembala - feel the balance of warm and cool<br><br>
+      Das multifunktionale Gesundheitskissen, auf das wir alle gewartet haben. Die Füllung aus Bio-Raps eignet sich perfekt zum Erwärmen als auch zum Runterkühlen des Kissens. Durch seine innovative Form und den praktischen Verschluss kann es an fast jeder Körperzone eingesetzt werden: Nacken, Schulter, unterer Rücken, unterer Bauch. tembala bringt Balance in deinen Alltag. Ob eine warme Umarmung oder ein Cool-Down nach einem stressigen Tag, tembala passt sich deinen Bedürfnissen an.
+    </p>
+    <img src="produktvision.png" alt="Produktvision" class="product-image">
+  </section>
+
+  <!-- ÜBER UNS -->
+  <section id="ueberuns">
+    <h2>Über uns</h2>
+    <p>
+      Wir sind 4 Schmerzpatient*innen, die aus einer kleinen Idee eine große Erleichterung in das Leben von Menschen bringen wollen. Unsere Erfahrungswerte mit herkömmlichen Gesundheitskissen, die oft nicht variabel einsetzbar sind, haben uns frustriert – daher haben wir tembala entwickelt. Mit vielen Ideen, Versuchen und Tüftelei ist unser multifunktionales Kissen entstanden. Unsere Zielgruppe: alle, die Wärme, Kälte und Entlastung brauchen, sei es zu Hause, unterwegs oder im Büro.
+    </p>
+  </section>
+
+  <!-- SHOP -->
+  <section id="shop">
+    <h2>Shop</h2>
+    <p>Hier kannst du tembala direkt erwerben:</p>
+    <a href="#" class="cta-btn">Zum Shop</a>
+  </section>
+
+  <!-- GALERIE -->
+  <section id="galerie">
+    <h2>Galerie</h2>
+    <div class="gallery">
+      <img src="produktvision.png" alt="Produktvision">
+      <img src="fabric-mint-2.png" alt="Stoff Mint">
+      <img src="fabric-pink.png" alt="Stoff Pink">
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer>
+    &copy; 2025 tembala. Alle Rechte vorbehalten.
+  </footer>
+
+</body>
+</html>
