@@ -9,7 +9,7 @@
   <link href="https://fonts.googleapis.com/css2?family=Pacifico&family=Montserrat:wght@400;500;700&display=swap" rel="stylesheet">
 
   <style>
-    * { margin:0; padding:0; box-sizing:border-box; }
+    * { margin: 0; padding: 0; box-sizing: border-box; }
 
     body {
       font-family: 'Montserrat', sans-serif;
@@ -32,8 +32,13 @@
 
     /* Logo groß oben links */
     header img {
-      height: 120px;
+      height: 140px;
       cursor: pointer;
+      transition: transform 0.3s ease;
+    }
+
+    header img:hover {
+      transform: scale(1.05);
     }
 
     nav {
@@ -45,10 +50,13 @@
       text-decoration: none;
       color: #004d40;
       font-weight: 600;
+      font-size: 1.1rem;
       transition: opacity 0.3s;
     }
 
-    nav a:hover { opacity: 0.7; }
+    nav a:hover {
+      opacity: 0.7;
+    }
 
     main {
       padding: 3rem 2rem;
@@ -60,7 +68,7 @@
     }
 
     h1, h2 {
-      font-family: 'Pacifico', cursive; /* Halimum-Simulation */
+      font-family: 'Pacifico', cursive;
       font-size: 2rem;
       margin-bottom: 1rem;
       color: #004d40;
@@ -102,6 +110,11 @@
       height: auto;
       border-radius: 12px;
       border: 2px solid #004d40;
+      transition: transform 0.3s ease;
+    }
+
+    .gallery img:hover {
+      transform: scale(1.05);
     }
 
     footer {
@@ -113,7 +126,7 @@
       font-size: 0.9rem;
     }
 
-    @media(max-width:768px){
+    @media(max-width:768px) {
       header { flex-direction: column; gap: 1rem; }
       nav { flex-direction: column; gap: 1rem; }
       .gallery img { width: 100%; max-width: 300px; }
@@ -141,5 +154,37 @@
 
     <section id="produkt">
       <h2>Produkt</h2>
-      <p>Tembala – feel the balance of warm and cool – ist ein neues Wärmekissen mit verschiedenen Funktionen.</p>
-      <p>Es kann sowohl kalt als auch warm verwendet werden und an verschiedenen Körperstellen: Nacken, Schulter, unterer Rücken, unte
+      <p><strong>Tembala – feel the balance of warm and cool</strong> ist ein neues Wärmekissen mit verschiedenen Funktionen.</p>
+      <p>Es kann sowohl kalt als auch warm verwendet werden und an verschiedenen Körperstellen: Nacken, Schulter, unterer Rücken, unterer Bauch.</p>
+      <p>Das Kissen hat Verschlussmöglichkeiten, sodass es auch im Stehen oder in Bewegung hält.</p>
+      <p>Es ist mit Bio-Raps befüllt.</p>
+    </section>
+
+    <section id="about">
+      <h2>Über uns</h2>
+      <p>Entwickelt wurde das Produkt von Schmerzpatient*innen, die endlich ein multifunktionales Kissen entwickelt haben.</p>
+    </section>
+
+    <section id="shop">
+      <h2>Webshop</h2>
+      <p>Hier kannst du Tembala direkt bestellen:</p>
+      <a href="#" class="shop-item">Jetzt kaufen</a>
+      <a href="#" class="shop-item">Mehr Infos</a>
+    </section>
+
+    <section id="gallery">
+      <h2>Galerie</h2>
+      <div class="gallery">
+        <img src="fabric-mint-2.png" alt="Mint Stoff">
+        <img src="fabric-pink.png" alt="Pink Stoff">
+        <img src="team.png" alt="Team Bild">
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    &copy; 2025 Tembala — Alle Rechte vorbehalten.
+  </footer>
+
+</body>
+</html>
