@@ -1,31 +1,133 @@
-<section id="galerie">
-  <h2>Galerie</h2>
-  <div class="gallery">
-    <img src="produktvision.png" alt="Produktvision">
-    <img src="fabric-mint-2.png" alt="Stoff Mint">
-    <img src="fabric-pink.png" alt="Stoff Pink">
-  </div>
-</section>
+<!DOCTYPE html>
+<html lang="de">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>tembala</title>
+
+<!-- Google Fonts -->
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700&family=Pacifico&display=swap" rel="stylesheet">
 
 <style>
+  /* Grundstyles */
+  * { margin:0; padding:0; box-sizing:border-box; }
+  html { scroll-behavior: smooth; }
+  body {
+    font-family: 'Montserrat', sans-serif;
+    background: linear-gradient(to bottom, #ffe4e1, #ffffff);
+    color: #20504c; /* Dunkle Schriftfarbe aus Logo */
+    line-height: 1.6;
+    text-align: center;
+  }
+
+  header {
+    padding: 2rem 1rem;
+  }
+
+  header img {
+    width: 300px;
+    max-width: 80%;
+    display: block;
+    margin: 0 auto 1rem auto;
+    cursor: pointer;
+  }
+
+  nav {
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    margin-bottom: 2rem;
+    flex-wrap: wrap;
+  }
+
+  nav a {
+    text-decoration: none;
+    font-family: 'Pacifico', cursive;
+    font-size: 1.4rem;
+    color: #20504c;
+    transition: 0.3s;
+  }
+
+  nav a:hover {
+    color: #39c7b3; /* Helles Mint als Hover */
+  }
+
+  section {
+    max-width: 900px;
+    margin: 0 auto 3rem auto;
+    padding: 1rem;
+    position: relative;
+  }
+
+  h2 {
+    font-family: 'Pacifico', cursive;
+    margin-bottom: 0.5rem;
+    color: #20504c;
+    position: relative;
+  }
+
+  h2::after {
+    content: '';
+    display: block;
+    width: 60px;
+    height: 4px;
+    background-color: #39c7b3; /* Mint Akzent */
+    margin: 8px auto 0 auto;
+    border-radius: 2px;
+  }
+
+  p { margin-bottom:1rem; color: #20504c; }
+
+  img.product-image {
+    max-width: 90%;
+    margin-top: 1rem;
+    border-radius: 12px;
+  }
+
   /* Galerie Flexbox */
   .gallery {
     display: flex;
     justify-content: center;
-    gap: 1rem; /* Abstand zwischen den Bildern */
-    flex-wrap: wrap; /* Zeilenumbruch bei kleineren Bildschirmen */
+    gap: 1rem;
+    flex-wrap: wrap;
     margin-top: 1rem;
   }
 
   .gallery img {
     width: 30%;
-    max-width: 250px; /* verhindert zu große Bilder auf großen Bildschirmen */
+    max-width: 250px;
     border-radius: 12px;
   }
 
   @media (max-width: 768px) {
     .gallery img {
-      width: 80%; /* auf kleinen Bildschirmen nebeneinander weniger sinnvoll, also volle Breite */
+      width: 80%;
     }
+    nav { flex-direction: column; gap:1rem; }
+    header img { width:200px; }
+  }
+
+  footer {
+    background: linear-gradient(to bottom, #ffe4e1, #ffffff);
+    color: #20504c;
+    padding: 2rem 1rem;
+    text-align: center;
   }
 </style>
+</head>
+
+<body>
+
+<header>
+  <a href="#">
+    <img src="logo.png" alt="tembala Logo">
+  </a>
+  <nav>
+    <a href="#produkt">Produkt</a>
+    <a href="#ueber-uns">Über uns</a>
+    <a href="#shop">Shop</a>
+    <a href="#galerie">Galerie</a>
+  </nav>
+</header>
+
+<section id="produ
